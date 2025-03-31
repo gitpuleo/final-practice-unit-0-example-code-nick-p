@@ -25,9 +25,11 @@ if (locationData) {
 }
 
 /*
+LET location data be some coordinates
+
 In Stringing Characters Together, we learned about how data can be stored as strings, and how that data will
 often need to be checked and cleaned up, then stored in a new variable, for our programs to make use of it.
-Here my porgram is trimming any bnlank space off the location metadata, then storing the fixed data
+Here my porgram is trimming any blank space off the location metadata, then storing the fixed data
 to be used by the application.
 */
 
@@ -51,6 +53,9 @@ while (photoBatch.length > 0) {
 }
 
 /*
+LET empty array 
+PUSH coordinate data
+
 In Building Arrays, we learned how to declare empty arrays that are ready to recieve new values pushed
 to them--values like the saved location data I am imagnging working with.
 
@@ -61,10 +66,12 @@ let locationDataArray = [];
 locationDataArray.push("10", "20", "30", '40');
 console.log(locationDataArray);
 
-/* Then, from Using Arrays, we learned methods for searching, extracting, and changing elements of an array. 
+/*Let location data in set range
+FILTER to new array
+ 
+Then, from Using Arrays, we learned methods for searching, extracting, and changing elements of an array. 
 In my case, I want to use filter to find all the location values that are near each other to store them in 
 a new array which will then be connected to a pin on my globe. 
-
 */
 
 let similarRangeLocationData = locationDataArray.filter(coord => coord >= 25);
